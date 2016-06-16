@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<layers>
+  <layer
+      name="i8d.i18n"
+      interface="i8d.i18n.interfaces.II8DI18NLayer"
+      />
+</layers>

@@ -1,0 +1,20 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="i8d.i18n">
+
+  <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
+  <include package="z3c.jbot" file="meta.zcml" />
+  <browser:jbot
+      directory="overrides"
+      layer="i8d.i18n.interfaces.II8DI18NLayer"
+      />
+
+  <!-- Publish static files -->
+  <browser:resourceDirectory
+      name="i8d.i18n"
+      directory="static"
+      />
+
+</configure>
